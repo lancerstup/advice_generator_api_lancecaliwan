@@ -1,0 +1,19 @@
+html{
+    font-size:100%;
+    box-sizing: border-box;
+    height:100vh;
+}
+
+*, *::before *::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin:0;
+    padding:0;
+    line-height: 1.6;
+    font-size:1rem;
+    font-family: 'Manrope', sans-serif;
+    background:var(--DarkBlue);
+  
+}
