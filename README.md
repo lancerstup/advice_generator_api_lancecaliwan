@@ -3,6 +3,6 @@ basic responsive with basic implementation of fetching and iterating api
 
 made with vanilla javascript with no animation yet. 
 
-api is credited to whatdoestrumpthink.com 
+api is credited to adviceslip.com
 
 all images and design are from frontendmentor challenges
