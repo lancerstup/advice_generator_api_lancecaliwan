@@ -6,10 +6,14 @@ const advId = document.querySelector(".advice__id");
 
 const fetchQuote = async () => {
     const config = {headers: {Accept: 'application/json'}}
-    const res = await fetch('https://api.whatdoestrumpthink.com/api/v1/quotes/random', config)
+    const res = await fetch('https://api.adviceslip.com/advice', config)
     const parsedRes = await res.json()
-    console.log(parsedRes) 
-    const flyQuotes = `"${parsedRes.message}"`
+    console.log(parsedRes.slip.id) 
+  
+    advId.textContent = ' '
+    advId.append(`Advice #${parsedRes.slip.id}`)
+
+    const flyQuotes = `"${parsedRes.slip.advice}"`
     return flyQuotes
 }
 

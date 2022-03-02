@@ -172,6 +172,8 @@ body {
   width: 65px;
   background-color: var(--NeonGreen);
   border-radius: 50%;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .advice__button:hover {
