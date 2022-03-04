@@ -18,17 +18,18 @@ const fetchQuote = async () => {
 }
 
 const addQuote = async() => {
+    advTxt.classList.add('fade-out')
     const quoteText = await fetchQuote();
-    console.log(quoteText)
+
     advTxt.append(quoteText)
+    advTxt.textContent = `${quoteText}`
+    
+    advTxt.classList.remove('fade-out')
  
     
 }
 
 
+advBtn.addEventListener('click', addQuote)
 
-advBtn.addEventListener('click', () => {
-        advTxt.textContent = ' '
-        addQuote()
-})
 
